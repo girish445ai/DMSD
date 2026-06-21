@@ -22,3 +22,72 @@ Over **50% of outdoor scenes** qualify as extreme low-light under the EV-based p
 ---
 
 ## Dataset Structure
+DSMD/
+
+├── outdoor/
+
+│   ├── scene_001/
+
+│   │   ├── left/
+
+│   │   │   ├── low_light/      # Low-light input RGB frames
+
+│   │   │   └── well_lit/       # Well-lit ground-truth RGB frames
+
+│   │   └── right/
+
+│   │       ├── low_light/
+
+│   │       └── well_lit/
+
+│   └── ...
+
+└── indoor/
+
+├── scene_001/
+
+│   ├── left/
+
+│   │   ├── low_light/
+
+│   │   └── well_lit/
+
+│   └── right/
+
+│       ├── low_light/
+
+│       └── well_lit/
+
+└── ...
+
+
+---
+
+## Tasks Supported
+
+| Task | Description |
+|------|-------------|
+| Low-light image restoration | Paired low-light→well-lit RGB supervision |
+| Stereo image enhancement | Joint left-right consistency under dark conditions |
+| Stereo depth / disparity estimation | Rectified stereo pairs with fixed baselines |
+| Multi-exposure fusion | Multiple exposure levels per scene |
+
+---
+
+## Comparison with Related Datasets
+
+| Dataset | Stereo | Low-light | Multi-exposure | Paired GT | Restoration | Disparity |
+|---------|--------|-----------|----------------|-----------|-------------|-----------|
+| SID (CVPR 2018) | ✗ | ✓ | ✓ | ✓ | ✓ | ✗ |
+| MID (ICCV 2021) | ✓\* | ✓ | ✓ | ✗ | ✗ | ✗ |
+| MS2 (2023) | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ |
+| LOL | ✗ | ✓ | ✗ | ✓ | ✓ | ✗ |
+| **DSMD (Ours)** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
+
+\* MID stereo pairs are captured from arbitrary viewpoints without a fixed baseline or rectified geometry.
+
+---
+
+## Illumination Criterion
+
+Scene darkness in DSMD is quantified using the **Exposure Value (EV)** framework per ISO 2720:
