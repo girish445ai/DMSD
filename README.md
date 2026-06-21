@@ -85,11 +85,6 @@ DSMD/
 | **DSMD (Ours)** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
 
 \* MID stereo pairs are captured from arbitrary viewpoints without a fixed baseline or rectified geometry.
-
----
-
-where `N` is the f-number (aperture) and `t` is the shutter speed in seconds. Scenes with **EV ≤ 1.65** are classified as extreme low-light, consistent with the photometric threshold established by the SID dataset.
-
 ---
 
 ## Download
