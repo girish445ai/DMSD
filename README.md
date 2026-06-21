@@ -88,6 +88,34 @@ DSMD/
 
 ---
 
-## Illumination Criterion
+where `N` is the f-number (aperture) and `t` is the shutter speed in seconds. Scenes with **EV ≤ 1.65** are classified as extreme low-light, consistent with the photometric threshold established by the SID dataset.
 
-Scene darkness in DSMD is quantified using the **Exposure Value (EV)** framework per ISO 2720:
+---
+
+## Download
+
+> _Download link / Zenodo / Google Drive link coming soon._
+
+---
+
+## Citation
+
+If you use DSMD in your research, please cite:
+
+```bibtex
+@article{dsmd2026,
+  title   = {Dark Stereo Multi-Exposure Dataset (DSMD) for Extreme Low-Light Image Restoration and Depth Estimation},
+  author  = {<Authors>},
+  journal = {Computer Vision and Image Understanding},
+  year    = {2026},
+  note    = {Accepted at Computer Vision and Image Understanding (CVIU)}
+}
+```
+
+---
+
+## License
+
+This dataset is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
